@@ -98,7 +98,7 @@ SELECT c.CountryName AS Country,
        p.FirstName + IIF(p.MiddleName IS NOT NULL, ' ' + p.MiddleName, '') + ',' + p.LastName AS Province
 FROM Person.Person p
 -- JOIN CTE & get Country name by using BusinessEntityID
-JOIN CountryName c ON p.BusinessEntityID = c.BusinessEntityID
+JOIN CountryName c ON p.BusinessEntityID = c.BusinessEntityID;
 
 -- Write a query that lists the country and province names 
 -- from person. CountryRegion and Person. StateProvince tables.
